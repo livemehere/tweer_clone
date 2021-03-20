@@ -1,0 +1,103 @@
+body,
+html {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#posting {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30%;
+}
+
+.inputbg {
+  background-color: rgba(0, 0, 0, 0.336);
+  outline: none;
+  border: none;
+  margin-bottom: 2px;
+}
+
+input {
+  height: 20px;
+}
+
+.tweets_box {
+  width: 50%;
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 70%;
+}
+
+.tweets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tweet {
+  box-sizing: border-box;
+  margin-top: 5px;
+  background-color: aliceblue;
+  width: 100%;
+  border-radius: 10px;
+  height: 120px;
+  padding-left: 15px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.tweet .title {
+  font-weight: 800;
+  font-size: 20px;
+}
+.tweet .date {
+  font-weight: normal;
+  font-size: 14px;
+}
+.tweet .name {
+  color: darkgrey;
+}
+.tweet .content {
+  margin-top: 5px;
+}
+.tweet .like_hate {
+  font-size: 12px;
+  color: darkslategray;
+}
